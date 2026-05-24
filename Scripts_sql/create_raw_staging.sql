@@ -10,15 +10,15 @@ CREATE TABLE raw_import (
     zip_code VARCHAR(50),
     latitude DECIMAL(10,6),
     longitude DECIMAL(10,6),
-    number_of_referrals INT, -- Placé ici selon le CSV
+    number_of_referrals INT,
     tenure_months INT,
     offer VARCHAR(255),
     phone_service VARCHAR(50),
-    avg_monthly_long_distance_charges DECIMAL(10,2), -- Placé ici selon le CSV
+    avg_monthly_long_distance_charges DECIMAL(10,2),
     multiple_lines VARCHAR(50),
     internet_service VARCHAR(50),
     internet_type VARCHAR(255),
-    avg_monthly_gb_download DECIMAL(10,2), -- Placé ici selon le CSV
+    avg_monthly_gb_download DECIMAL(10,2),
     online_security VARCHAR(50),
     online_backup VARCHAR(50),
     device_protection_plan VARCHAR(50),
