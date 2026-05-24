@@ -1,0 +1,42 @@
+DROP TABLE IF EXISTS raw_import CASCADE;
+
+CREATE TABLE raw_import (
+    customer_id VARCHAR(255),
+    gender VARCHAR(50),
+    age INT,
+    married VARCHAR(50),
+    number_of_dependents INT,
+    city VARCHAR(255),
+    zip_code VARCHAR(50),
+    latitude DECIMAL(10,6),
+    longitude DECIMAL(10,6),
+    number_of_referrals INT, -- Placé ici selon le CSV
+    tenure_months INT,
+    offer VARCHAR(255),
+    phone_service VARCHAR(50),
+    avg_monthly_long_distance_charges DECIMAL(10,2), -- Placé ici selon le CSV
+    multiple_lines VARCHAR(50),
+    internet_service VARCHAR(50),
+    internet_type VARCHAR(255),
+    avg_monthly_gb_download DECIMAL(10,2), -- Placé ici selon le CSV
+    online_security VARCHAR(50),
+    online_backup VARCHAR(50),
+    device_protection_plan VARCHAR(50),
+    premium_tech_support VARCHAR(50),
+    streaming_tv VARCHAR(50),
+    streaming_movies VARCHAR(50),
+    streaming_music VARCHAR(50),
+    unlimited_data VARCHAR(50),
+    contract VARCHAR(255),
+    paperless_billing VARCHAR(50),
+    payment_method VARCHAR(255),
+    monthly_charge DECIMAL(10,2),
+    total_charges DECIMAL(10,2),
+    total_refunds DECIMAL(10,2),
+    total_extra_data_charges DECIMAL(10,2),
+    total_long_distance_charges DECIMAL(10,2),
+    total_revenue DECIMAL(10,2),
+    customer_status VARCHAR(255),
+    churn_category VARCHAR(255),
+    churn_reason TEXT
+);
