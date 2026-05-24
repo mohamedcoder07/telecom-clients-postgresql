@@ -7,7 +7,7 @@ CREATE TABLE customers (
 );
 
 CREATE TABLE locations (
-    location_id SERIAL PRIMARY KEY, -- Remplacement de AUTO_INCREMENT par SERIAL
+    location_id SERIAL PRIMARY KEY,
     customer_id VARCHAR(50) REFERENCES customers(customer_id),
     city VARCHAR(100),
     zip_code VARCHAR(20),
